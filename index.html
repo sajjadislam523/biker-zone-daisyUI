@@ -1,19 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <title>Bikers Zone</title>
-  <link rel="stylesheet" crossorigin href="/assets/index-CqffxsSk.css">
+  <link rel="stylesheet" crossorigin href="./assets/index-DZK9fWMO.css">
 </head>
 
 <body>
-    <header></header>
-    <main></main>
+    <!-- Header section -->
+    <header class="md:container mx-auto">
+        <nav class="my-6">
+            <div class="navbar bg-base-100">
+                <div class="flex-1">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-2xl font-poppins font-bold">Biker Zone</a>
+                </div>
+                <div class="hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 font-poppins font-medium">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="">
+                    <a
+                        class="btn font-poppins font-bold text-lg bg-bike-primary hover:bg-bike-secondary text-white">Login</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main section -->
+    <main class="md:container mx-auto">
+
+        <!-- Carousel section -->
+        <div class="carousel w-full my-10">
+            <!-- Slide One -->
+            <div id="slide1" class="carousel-item relative w-full bg-bg-primary rounded-lg">
+                <div class="flex flex-col lg:flex-row p-12 lg:p-20">
+                    <div class="space-y-10 flex-1 mt-16">
+                        <p class="font-poppins font-bold text-6xl">Ride-on R15 V4 <br> with Smile</p>
+                        <p class="">Amet minim mollit non deserunt ullamco <br> est sit aliqua dolor do amet sint. Velit
+                            officia consequat duis enim velit mollit.</p>
+                        <button
+                            class="btn bg-bike-primary hover:bg-bike-secondary font-poppins font-semibold text-xl text-white">Purchase</button>
+                    </div>
+                    <div class="flex-1">
+                        <img src="./assets/bike1-D4-N4Amb.png" />
+                    </div>
+                </div>
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+
+            <!-- Slide two -->
+            <div id="slide2" class="carousel-item relative w-full bg-bg-primary rounded-lg">
+                <div class="flex flex-col lg:flex-row p-12 lg:p-20">
+                    <div class="space-y-10 flex-1 mt-16">
+                        <p class="font-poppins font-bold text-6xl">Ride-on R15 V4 <br> with Smile</p>
+                        <p class="">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                            officia consequat duis enim velit mollit.</p>
+                        <button
+                            class="btn bg-bike-primary hover:bg-bike-secondary font-poppins font-semibold text-xl text-white">Purchase</button>
+                    </div>
+
+                    <div class="flex-1">
+                        <img src="./assets/bike2-Bxn6xa0u.png" />
+                    </div>
+                </div>
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full bg-bg-primary rounded-lg">
+                <div class="flex flex-col lg:flex-row p-12 lg:p-20">
+                    <div class="space-y-10 flex-1 mt-16">
+                        <p class="font-poppins font-bold text-6xl">Ride-on R15 V4 <br> with Smile</p>
+                        <p class="">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                            officia consequat duis enim velit mollit.</p>
+                        <button
+                            class="btn bg-bike-primary hover:bg-bike-secondary font-poppins font-semibold text-xl text-white">Purchase</button>
+                    </div>
+                    <div class="flex-1">
+                        <img src="./assets/bike3-BxHl5dww.png" />
+                    </div>
+                </div>
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full bg-bg-primary rounded-lg">
+                <div class="flex flex-col lg:flex-row p-12 lg:p-20">
+                    <div class="space-y-10 flex-1 mt-16">
+                        <p class="font-poppins font-bold text-6xl">Ride-on R15 V4 <br> with Smile</p>
+                        <p class="">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                            officia consequat duis enim velit mollit.</p>
+                        <button
+                            class="btn bg-bike-primary hover:bg-bike-secondary font-poppins font-semibold text-xl text-white">Purchase</button>
+                    </div>
+                    <div class="flex-1">
+                        <img src="./assets/bike4-CeZ7ccRT.png" />
+                    </div>
+                </div>
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Bikes section -->
+        <section class="my-10">
+            <div class="text-center mb-8">
+                <h1 class="font-poppins text-5xl font-semibold">Fetured Bikes In This Year</h1>
+                <small class="font-poppins font-semibold text-bike-primary">Best bike collection</small>
+                <hr class="w-32 h-px mx-auto border-0 bg-bike-primary">
+            </div>
+
+            <div class="flex flex-col gap-10 lg:flex-row items-center justify-evenly mt-8">
+                <img class="grayscale" src="./assets/feature-bike-CqZV_MVQ.png" alt="">
+                <img src="./assets/feature-bike-CqZV_MVQ.png" alt="">
+                <img class="grayscale" src="./assets/feature-bike-CqZV_MVQ.png" alt="">
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer section -->
     <footer></footer>
 </body>
 
